@@ -1,8 +1,8 @@
 const imagemPrincipal = document.getElementById('imagem-principal');
-const miniatura = document.querySelectorAll('miniatura');
-miniatura.forEach(miniaturas=> {
-  miniatura.addEventListener('click', function(){
+const miniaturas = document.querySelectorAll('.miniatura');
+miniaturas.forEach(miniatura => {
+miniatura.addEventListener('click', function() {
 const novaImage = this.getAttribute('data-image');
-imagemPrincipal.prc = novaImage;
+imagemPrincipal.src = novaImage;
   });
 });
